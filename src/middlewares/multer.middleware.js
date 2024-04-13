@@ -2,7 +2,7 @@ import multer from "multer";
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    // file is avaible from multer to handle files
+    // file is available from multer to handle files
     cb(null, "./public/temp");
   },
   filename: function (req, file, cb) {
